@@ -1,0 +1,10 @@
+
+npm init
+project name
+
+
+templating engine
+-ejs(embeded js)
+-moustache
+-pug
+-handlebar
