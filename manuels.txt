@@ -8,3 +8,6 @@ templating engine
 -moustache
 -pug
 -handlebar
+
+import
+npm install ejs

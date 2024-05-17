@@ -1,31 +1,31 @@
 
-const { localsName } = require('ejs')
 const express = require('express')
 //const app = require('express')()
 
 const app = express()
-// console.log(app)
 
 
 app.set('view engine','ejs')
 
 
-
-
 app.get('/',(req,res)=>{
-    const name = 'Ajaya Sauden'
-    const address = "Jhapa"
-    res.render('home.ejs',{data: name, address})
+    const name = '- Ajaya Sauden'
+    res.render('home.ejs',{data: name})
 })
 
-
-app.get("/about",(req,res)=>{
-    res.render('about')
+app.get('/register',(req,res)=>{
+    res.render("auth/register")
+})
+app.get("/login",(req,res)=>{
+    res.render("auth/login")
 })
 
+app.use(express.static('public/css/'))
+app.use(express.static('public/css/'))
 
-app.listen(3000,()=>{
-    console.log("project has started at port 3000")
+const PORT=3000
+app.listen(PORT,()=>{
+    console.log(`project has started at PORT ${PORT}`)
 })
 
 
