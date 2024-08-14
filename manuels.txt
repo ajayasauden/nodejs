@@ -11,3 +11,26 @@ templating engine
 
 import
 npm install ejs
+
+
+get
+post
+patch
+put
+
+bcrypt for hash
+thin controller fat model
+{
+validation and bypass
+clint-side
+required 
+
+server-side
+postman
+}
+migration of db changes
+joi package for error handling
+
+
+findall returns array
+findbypk returns object 
